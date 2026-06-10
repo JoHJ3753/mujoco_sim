@@ -1,0 +1,14 @@
+<mujoco>
+  <worldbody>
+
+    <body name="arm" pos="0 0 1">
+      <joint name="arm_joint" type="hinge" axis="0 1 0"/>
+      <geom type="capsule" size="0.05 0.3"/>
+    </body>
+
+  </worldbody>
+
+  <actuator>
+    <motor joint="arm_joint" ctrlrange="-1 1"/>
+  </actuator>
+</mujoco>
